@@ -7,11 +7,11 @@ var currentDate = new Date(); //今日の日付
 
 function task() {
   // スプレットシート取得
-  var mySS = SpreadsheetApp.openById("1UIReQgXginBURpOuHsKXt4rkfymDf9wJWTz5I49qDas");
+  var mySS = SpreadsheetApp.openById("******");
   // スプレットシートの書き込む位置
   var range= mySS.getSheetByName("data").getRange(2, 1);
   // APIキーでBacklog認証&取得
-  var diskusage = UrlFetchApp.fetch("https://apparel01.backlog.com/api/v2/space/diskUsage?apiKey=zEdBkRjueUwETDwTSVLSSl6O4ISHQZ0b5wMaT6wunmsYPiNC66eF7pTVw7bkjU5N"); 
+  var diskusage = UrlFetchApp.fetch("https://*****.backlog.com/api/v2/space/diskUsage?apiKey=******"); 
   
   if (diskusage.getResponseCode() != 200) {
     return false;
